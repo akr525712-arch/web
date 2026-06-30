@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .prarent {
+        position : relative;
+        background-color: blue;
+        width: 100vw;
+        height: 100vh;
+    }
+    .child{
+        
+       left: auto;
+        z-index: 1;
+        position: absolute;
+        background-color: orange;
+        width: 100vw;
+        height: 10vh;
+        margin-top: 20px;
+            img{
+            width: 150px;
+            
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%,-50%);
+            margin-left: 65px;
+           
+        }
+    }
+    .p{
+       
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+         z-index: 2;
+         font-size: 30px;
+        
+    }
+    .b{
+        z-index: 3;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%,-50%);
+        padding: 10px;
+    }
+    button{
+        padding: 20px;
+        height: 50px;
+        width: 100px;
+        margin-left: 10px;
+        border-radius: 10px;
+        
+    }
+    
+</style>
+<body>
+    <div class="prarent">
+        <div class="child">
+            <div class="img"><img src="https://th.bing.com/th/id/R.66d479bf9202c0442c34e60952d69bb8?rik=tZRnw%2fwIow2Jmg&riu=http%3a%2f%2fume-bmc.edu.kh%2fwp-content%2fuploads%2f2022%2f10%2fcellcard-logo_.png&ehk=%2bRtB5rx887p8T3A3VMQVt%2fjh%2fa7dTI3d8pNjBAkol%2fk%3d&risl=&pid=ImgRaw&r=0" alt="Description of the image"></div>
+            <div class="p">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Service</a>
+            </div>
+            <div class="b">
+                <button>
+                    ចុះឈ្មោះ
+                </button>
+                <button >
+                    ចូលប្រើ
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

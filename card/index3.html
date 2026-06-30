@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Angkor&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 150vh;
+    }
+    header {
+      width: 100%;
+      height: 9%;
+      display: flex;
+      font-family: "Angkor", serif;
+    }
+    .header-chail-1 {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      padding-top: 30px;
+      justify-content: center;
+      margin-top: 50px;
+      & img {
+        width: 20%;
+        height: 50%;
+        margin-left: 50px;
+      }
+      & h2 {
+        font-size: 50px;
+        margin-left: 10px;
+      }
+    }
+    .header-chail-2 {
+      height: 100%;
+      width: 60%;
+      margin-top: 50px;
+      & ul {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        list-style: none;
+        display: flex;
+        margin-top: 10px;
+      }
+      & li {
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+        margin-top: 40px;
+      }
+    }
+    .header-chail-3 {
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      justify-content: center;
+      padding: 20px;
+      display: flex;
+      margin-top: 50px;
+      & input {
+        width: 70%;
+        height: 50%;
+        border-radius: 10px;
+        font-size: 30px;
+        padding: 10px;
+      }
+      & button {
+        margin-left: 10px;
+        width: 20%;
+        height: 50%;
+        border-radius: 10px;
+        font-size: 30px;
+        background-color: rgb(158, 235, 42);
+        color: aliceblue;
+        box-shadow: 0 0 10px;
+      }
+    }
+    main {
+      width: 100%;
+      height: 70%;
+
+      .content-1 {
+        width: 100%;
+        height: 7%;
+        background-color: black;
+        font-family: "Angkor", serif;
+      }
+      .mt {
+        color: aliceblue;
+        text-align: center;
+      }
+      .content-2 {
+        width: 100%;
+        height: 45%;
+        display: flex;
+      }
+      .child-m1 {
+        width: 33.5%;
+        height: 100%;
+      }
+      .child-m1 .card {
+        width: 70%;
+        height: 95%;
+        margin-top: 3%;
+        margin-left: 25%;
+        background-color: rgb(178, 173, 173);
+        border-radius: 30px;
+      }
+      .child-m1 .card .ig img {
+        width: 90%;
+        height: 460px;
+        border-radius: 30px;
+        margin-left: 5%;
+        margin-top: 1%;
+        
+      }
+      & span {
+        border: 1px;
+        background-color: rgb(254, 2, 2);
+        padding: 20px;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+       
+      }
+      .child-m1 .card .ig img {
+        & span{
+          margin-top: 10px;
+        }
+      }
+      .child-m1 .card .cpt {
+        margin-top: 3%;
+        margin-left: 50px;
+        color: aliceblue;
+        h2 {
+          margin-top: 10px;
+          font-size: 20px;
+        }
+        & p{
+          color: rgb(41, 41, 136);
+          font-size: 20px
+          font-style; ;
+        }
+      }
+      .po {
+        width: 95%;
+        display: flex;
+        & h1 {
+        width: 50%;
+        height: 100%;
+        margin-left: 40px;
+        margin-top: 10px;
+        color: aliceblue;
+        font-size: 50px;
+      }
+      }
+      
+      button {
+        height: 20;
+        width: 30%;
+        margin-left: 30%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(53, 53, 236);
+        margin-top: 30;
+        font-size: 30px;
+      }
+
+      .child-m2 {
+        width: 33.5%;
+        height: 100%;
+      }
+      .child-m2 .card {
+        width: 70%;
+        height: 95%;
+        margin-top: 3%;
+        margin-left: 13%;
+        background-color: rgb(178, 173, 173);
+        border-radius: 30px;
+      }
+      .child-m2 .card .ig img {
+        width: 90%;
+        height: 470px;
+        border-radius: 30px;
+        margin-left: 5%;
+        margin-top: 1%;
+        
+      }
+      .ig span {
+        border: 1px;
+        background-color: rgb(103, 234, 91);
+        padding: 15px 15px;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: -20px;
+      }
+      .child-m2 .card .ig img {
+        & span{
+          margin-top: 10px;
+        }
+      }
+      .child-m2 .card .cpt {
+        margin-top: 3%;
+        margin-left: 50px;
+        color: aliceblue;
+        h2 {
+          margin-top: 10px;
+        }
+      }
+      .po {
+        width: 95%;
+        display: flex;
+        & h1 {
+        width: 50%;
+        height: 100%;
+        margin-left: 40px;
+        margin-top: 10px;
+        color: aliceblue;
+        font-size: 50px;
+      }
+      }
+      
+      button {
+        height: 20;
+        width: 30%;
+        margin-left: 30%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(53, 53, 236);
+        margin-top: 30;
+        font-size: 30px;
+      }
+      .child-m3 {
+        width: 33.5%;
+        height: 100%;
+      }
+      .child-m3 .card {
+        width: 70%;
+        height: 95%;
+        margin-top: 3%;
+        margin-left: 10px;
+        background-color: rgb(178, 173, 173);
+        border-radius: 30px;
+      }
+      .child-m3 .card .ig img {
+        width: 90%;
+        height: 470px;
+        border-radius: 30px;
+        margin-left: 5%;
+        margin-top: 1%;
+        
+      }
+      .ig span {
+        border: 1px;
+        background-color: rgb(103, 234, 91);
+        padding: 15px 15px;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: -20px;
+      }
+      .child-m3 .card .ig img {
+        & span{
+          margin-top: 10px;
+        }
+      }
+      .child-m3 .card .cpt {
+        margin-top: 3%;
+        margin-left: 50px;
+        color: aliceblue;
+        h2 {
+          margin-top: 10px;
+        }
+      }
+      .po {
+        width: 95%;
+        display: flex;
+        & h1 {
+        width: 50%;
+        height: 100%;
+        margin-left: 40px;
+        margin-top: 10px;
+        color: aliceblue;
+        font-size: 50px;
+      }
+      }
+      
+      button {
+        height: 20;
+        width: 30%;
+        margin-left: 30%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(32, 174, 34);
+        margin-top: 30;
+        font-size: 30px;
+      }
+      .content-3 {
+        width: 100%;
+        height: 45%;
+        display: flex;
+      }
+    }
+    footer {
+      width: 100%;
+      height: 25%;
+      background-color: black;
+    }
+    .footer-1{
+      color: aliceblue;
+      width: 100%;
+      height: 80%;
+     display: flex;
+    }
+    .footer-chail-1{
+      
+      margin-top: 20px;
+      width: 25%;
+      height: 100%;
+       & img{
+        width: 50%;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 50%;
+      }
+      & p{
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    .logo{
+      width: 100%;
+      height: 20%;
+      display: flex;
+      & h2{
+        font-size: 35px;
+        margin-top: 10px;
+      }
+    }.logo .lg{
+      width: 50%;
+     
+    }
+    .logo .h{
+      width: 50%;
+      height: 100%;
+      font-family: "Angkor", serif;
+      
+    }
+    .footer-chail-2{
+      margin-left: 40px;
+      margin-top: 30px;
+      width: 25%;
+      height: 100%;
+      
+      ul{ list-style: none;
+      }
+    }
+    h2{
+      font-size: 30px
+    }
+    .footer-chail-3{
+      margin-top: 30px;
+      width: 25%;
+      height: 100%;
+    }ul{ list-style: none;
+      & li{
+        font-size: 23px;
+      }
+    }
+    .footer-chail-4{
+      
+      margin-top: 30px;      
+      width: 25%;
+      height: 100%;
+      & p{ 
+        font-size: 30px;
+      }
+      &
+      input{
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+
+      }
+      button{
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: greenyellow;
+      }
+    }
+    .footer-2{
+      & h4{
+        color: aliceblue;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <div class="header-chail-1">
+        <img
+          src="https://tiermaker.com/images/templates/nike-sneaker-tier-list-objective-15533265/155332651673108170.png"
+          alt=""
+        />
+        <h2>Nike-Shop</h2>
+      </div>
+      <div class="header-chail-2">
+        <ul>
+          <li>home</li>
+          <li>Shop</li>
+          <li>categories</li>
+          <li>Deals</li>
+          <li>Aboul us</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="header-chail-3">
+        <input type="Sreach" placeholder="Sreach Product..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <button>Sreach</button>
+      </div>
+    </header>
+    <main>
+      <div class="content-1">
+        <div class="mt">
+          <h1>Our Products</h1>
+          <p>Find the best products at the best.</p>
+        </div>
+      </div>
+      <div class="content-2">
+        <div class="child-m1">
+          <div class="card">
+            <span>new</span>
+            <div class="ig">              
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.KypBlcIDBEsHCy71AcguzAHaHi?pid=ImgDet&w=205&h=208&c=7&o=7&rm=3"
+              />
+            </div>
+            <div class="cpt">
+              <p>Electronics</p>
+              <h2>Nike Air Zoom</h2>
+            </div>
+            <div class="po">
+              <h1>$120.00</h1>
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="child-m2">
+          <div class="card">
+            <div class="ig">
+              <span>new</span>
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.CJPPsMjRDvJ9WQeCdIbFrAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt=""
+              />
+            </div>
+            <div class="cpt">
+              <p>Electronics</p>
+              <h2>Nike Ladies' Wtndrunner Jacket</h2>
+            </div>
+            <div class="po">
+              <h1>$80.00</h1>
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="child-m3">
+          <div class="card">
+            <div class="ig">
+              <span>new</span>
+              <img
+                src="https://www.sportsdirect.com/images/products/34214003_h.jpg"
+                alt=""
+              />
+            </div>
+            <div class="cpt ">
+              <p>Electronics</p>
+              <h2>Short Nike Pro</h2>
+            
+                <i id="star" class="fa-solid fa-star"></i>
+                <i id="star" class="fa-solid fa-star"></i>
+                <i id="star" class="fa-solid fa-star"></i>
+                <i id="star" class="fa-solid fa-star"></i>
+                <i  class="fa-solid fa-star"></i>
+              
+            </div>
+            <div class="po">
+              <h1>$39.50</h1>
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-3">
+        <div class="child-m1">
+          <div class="card">
+            <div class="ig">
+              <span>new</span>
+              <img
+                src="https://th.bing.com/th?q=Nike+Mercurial+Vapor&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&pid=InlineBlock&rm=3&mkt=en-WW&cc=KH&setlang=en&adlt=strict&t=1&mw=247"
+                alt=""
+              />
+            </div>
+            <div class="cpt">
+              <p>Electronics</p>
+              <h2>Nike sport</h2>
+            </div>
+            <div class="po">
+              <h1>$220.70</h1>
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="child-m2">
+          <div class="card">
+            <div class="ig">
+              <span>new</span>
+              <img
+                src="https://th.bing.com/th/id/OIP.FV7HCnWM-u2NDVrEXypOlAHaHa?w=207&h=208&c=7&r=0&o=7&pid=1.7&rm=3"
+                alt=""
+              />
+            </div>
+            <div class="cpt">
+              <p>Electronics</p>
+              <h2>Nike bag</h2>
+            </div>
+            <div class="po">
+              <h1>$2000.00</h1>
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="child-m3">
+          <div class="card">
+            <div class="ig">
+              <span>new</span>
+              <img
+                src="https://www.snaintongolf.co.uk/media/catalog/product/cache/c70787c839831713755420cd48e56679/N/i/Nike-Dri-Fit-Crew-Socks-SG0382-101-update_1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="cpt ">
+              <p>Electronics</p>
+              <h2>Nike Socks</h2>
+            </div>
+            <div class="po">
+              <h1>$5.00</h1>
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-1">
+        <div class="footer-chail-1">
+          <div class="logo">
+            <div class="lg">
+              <img
+              src="https://media.about.nike.com/image-downloads/cf68f541-fc92-4373-91cb-086ae0fe2f88/002-nike-logos-swoosh-white.jpg">
+            </div>
+            <div class="h">
+              <h2>Nike-Shop</h2>
+            </div>
+              </div>
+              <p>Your one-stop destination for quality <br> products at the bestprices. Shop smart, save more.</p>
+        </div>
+        <div class="footer-chail-2">
+          <h2>Quisk Links</h2><br>
+          <ul>
+            <li>home</li>
+            <li>Shop</li>
+            <li>categories</li>
+            <li>Deals</li>
+            <li>Aboul us</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-chail-3">
+         <h2>Customer Service</h2><br>
+          <ul>
+            <li>Help Center</li>
+            <li>Shipping Policy</li>
+            <li>Returns & Refunds</li>
+            <li>Terms & condions</li>
+            <li>Privacy Policy</li>           
+          </ul>
+        </div>
+        <div class="footer-chail-4">
+          <h2>Newsletter</h2><br>
+          <p>Subcribe to get update on new arrivalsand <br> special offers.</p><br>
+          <input type="text" placeholder="Enter your email"><br><br>
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-2">
+        <hr>
+        <h4>©2026 ShopEase.All rights reserved.</h4>
+      </div>
+    </footer>
+  </body>
+</html>

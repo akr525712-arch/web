@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "header  header  header"
+        "sidebar main    ads"
+        "footer footer  footer";
+        gap: 10px;
+        height: 100vh;
+        font-size: 24px;
+        
+    }
+
+    .header {
+        grid-area: header;
+        background-color: rgb(79, 74, 74);
+       
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: rgb(79, 74, 74);
+        
+    }
+
+    .main-content {
+        grid-area: main;
+        background-color: rgb(79, 74, 74);
+    }
+
+    .ads {
+        grid-area: ads;
+        background-color:rgb(79, 74, 74);
+        
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color:rgb(79, 74, 74);
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <aside class="sidebar">sidebar</aside>
+        <main class="main-content">main content</main>
+        <aside class="ads">ADS</aside>
+        <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>

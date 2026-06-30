@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./csslogin.css" />
+    <link rel="stylesheet" href="./script.js">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="slider-box">
+      <div>
+        <img src="./Screenshot 2026-05-14 172152.png" alt="" />
+      </div>
+      <div>
+        <img src="./Screenshot 2026-05-14 221959.png" alt="">
+      </div>
+      <div>
+        <img src="./Screenshot 2026-04-29 221704.png" alt="">
+      </div>
+      </div>
+      <div>
+        <h1 style="color: rgb(244, 244, 241); margin-left: 19px">
+          Create an account .
+        </h1>
+        <br />
+        <p style="color: rgb(173, 173, 168); margin-left: 19px">
+          Already have an account?
+          <a href="" style="color: rgb(61, 71, 137)">Log in</a>
+        </p>
+
+        <form action="">
+          <nav style="display: flex; justify-content: space-between">
+            <input
+              type="text"
+              placeholder="Fletcher"
+              style="width: 48%; padding: 10px"
+              id="Fletcher"
+              name="Fletcher"
+              required
+              ;
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              style="width: 48%; padding: 10px"
+              id="Last name"
+              name="Last name"
+              required
+            />
+          </nav>
+          <label for="email"></label>
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="password"> </label>
+          <input
+            type="password"
+            placeholder="Enter an passwords"
+            id="password"
+            name="password"
+            required
+          />
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms"
+              >I agree to the <a href="">Terms & Conditions</a></label
+            >
+          </div>
+          <nav>
+            <button
+              type="submit"
+              style="
+                color: rgb(255, 250, 247);
+                width: 100%;
+                background-color: rgb(203, 126, 2);
+              "
+            >
+              Create Account
+            </button>
+          </nav>
+
+          <div class="divider">
+            <div class="line"></div>
+            <div class="text">Or register with</div>
+            <div class="line"></div>
+          </div>
+          <div class="button-group">
+            <button class="social-btn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                alt="Google"
+              />
+              <span>Google</span>
+            </button>
+
+            <button class="social-btn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                alt="Apple"
+                style="filter: invert(1)"
+              />
+              <span>Apple</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
