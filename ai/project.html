@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Modern E-Commerce</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link rel="stylesheet" href="../bootstrep/css/bootstrap.css">
+    <!-- Custom CSS for subtle tweaks -->
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 100px 0;
+        }
+        .product-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .category-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .category-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: background 0.3s ease;
+        }
+        .category-card:hover .category-overlay {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">ShopEase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
+                </ul>
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+                <div class="navbar-nav gap-3">
+                    <a href="#" class="nav-link position-static">
+                        <i class="bi bi-heart fs-6"></i>
+                        <button class="btn btn-outline-primary">sign in</button>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO BANNER -->
+    <header class="hero-section text-center text-md-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <span class="badge bg-primary mb-2">Summer Sale Up to 50% Off</span>
+                    <h1 class="display-4 fw-bold text-dark mb-3">Upgrade Your Style, Effortlessly.</h1>
+                    <p class="lead text-muted mb-4">Discover curated collections designed to elevate your everyday look. Free shipping on orders over $50.</p>
+                    <a href="#" class="btn btn-primary btn-lg px-4 me-2">Shop Now</a>
+                    <a href="#" class="btn btn-outline-dark btn-lg px-4">Explore Collections</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <!-- Placeholder graphic using Bootstrap Icons instead of external image dependencies -->
+                    <div class="bg-white p-5 rounded shadow-sm d-inline-block">
+                        <i class="bi bi-bag-heart text-primary" style="font-size: 8rem;">
+                            <img src="" alt="">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. CATEGORIES SECTION -->
+    <section class="container my-5 py-4">
+        <h2 class="text-center fw-bold mb-4">Shop by Category</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="category-card bg-secondary text-white text-center" style="height: 150px;">
+                    <div class="category-overlay">
+                        <h4 class="fw-semibold">Fashion</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card bg-success text-white text-center" style="height: 150px;">
+                    <div class="category-overlay">
+                        <h4 class="fw-semibold">Electronics</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card bg-warning text-white text-center" style="height: 150px;">
+                    <div class="category-overlay">
+                        <h4 class="fw-semibold">Home Decor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card bg-danger text-white text-center" style="height: 150px;">
+                    <div class="category-overlay">
+                        <h4 class="fw-semibold">Accessories</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED PRODUCTS GRID -->
+    <section class="container my-5 py-4 bg-light rounded-4 p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold m-0">Featured Products</h2>
+            <a href="#" class="text-primary text-decoration-none fw-semibold">View All <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 product-card shadow-sm">
+                    <div class="p-2 bg-white text-center rounded-top">
+                        <img width="210px" height="200px" src="https://scontent.fpnh11-2.fna.fbcdn.net/v/t39.99422-6/721223789_2203355870069534_3178595970527133844_n.png?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEtyOCIfvv09tdT5o0eyMb5ZMiUdQ6vP_NkyJR1Dq8_8x8eEPJ3khiVhY63bUskII7b6KbsG0us5D3F5FIMK1Th&_nc_ohc=_RGbv5Rz1Y4Q7kNvwHXZLR3&_nc_oc=Ado4smFXy9fEu5QckCcmOzXpOUN2UKE6m3P6cRoZqOQ8yrW353k8AvIoThG-7lYNSao&_nc_zt=14&_nc_ht=scontent.fpnh11-2.fna&_nc_gid=yZtlWenqhUu7ugr2waTWyg&_nc_ss=7b2a8&oh=00_AQDKkl97mBaUvLToaiMvDoGWMiVtWxU58pkR17zPaIgYBg&oe=6A4AC289" class="card-img h-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="text-muted small mb-1">Electronics</span>
+                        <h5 class="card-title h6 fw-bold mb-2">Premium Pro Laptop</h5>
+                        <div class="d-flex align-items-center mb-2 text-warning small">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                            <span class="text-muted ms-1">(42)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="fw-bold text-dark fs-5">$999.00</span>
+                            <button class="btn btn-outline-primary ">buy new</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 product-card shadow-sm">
+                    <div class="p-2 bg-white text-center rounded-top">
+                        <img width="210px" height="200px" src="https://scontent.fpnh11-2.fna.fbcdn.net/v/t39.99422-6/721223789_2203355870069534_3178595970527133844_n.png?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEtyOCIfvv09tdT5o0eyMb5ZMiUdQ6vP_NkyJR1Dq8_8x8eEPJ3khiVhY63bUskII7b6KbsG0us5D3F5FIMK1Th&_nc_ohc=_RGbv5Rz1Y4Q7kNvwHXZLR3&_nc_oc=Ado4smFXy9fEu5QckCcmOzXpOUN2UKE6m3P6cRoZqOQ8yrW353k8AvIoThG-7lYNSao&_nc_zt=14&_nc_ht=scontent.fpnh11-2.fna&_nc_gid=yZtlWenqhUu7ugr2waTWyg&_nc_ss=7b2a8&oh=00_AQDKkl97mBaUvLToaiMvDoGWMiVtWxU58pkR17zPaIgYBg&oe=6A4AC289" class="card-img h-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="text-muted small mb-1">Accessories</span>
+                        <h5 class="card-title h6 fw-bold mb-2">Minimalist Smartwatch</h5>
+                        <div class="d-flex align-items-center mb-2 text-warning small">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <span class="text-muted ms-1">(18)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="fw-bold text-dark fs-5">$149.00</span>
+                            <button class="btn btn-outline-primary btn-sm">buy new</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 product-card shadow-sm">
+                    <div class="p-2 bg-white text-center rounded-top">
+                        <img width="210px" height="200px" src="https://scontent.fpnh11-2.fna.fbcdn.net/v/t39.99422-6/721223789_2203355870069534_3178595970527133844_n.png?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEtyOCIfvv09tdT5o0eyMb5ZMiUdQ6vP_NkyJR1Dq8_8x8eEPJ3khiVhY63bUskII7b6KbsG0us5D3F5FIMK1Th&_nc_ohc=_RGbv5Rz1Y4Q7kNvwHXZLR3&_nc_oc=Ado4smFXy9fEu5QckCcmOzXpOUN2UKE6m3P6cRoZqOQ8yrW353k8AvIoThG-7lYNSao&_nc_zt=14&_nc_ht=scontent.fpnh11-2.fna&_nc_gid=yZtlWenqhUu7ugr2waTWyg&_nc_ss=7b2a8&oh=00_AQDKkl97mBaUvLToaiMvDoGWMiVtWxU58pkR17zPaIgYBg&oe=6A4AC289" class="card-img h-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="text-muted small mb-1">Audio</span>
+                        <h5 class="card-title h6 fw-bold mb-2">Noise Cancelling Headphones</h5>
+                        <div class="d-flex align-items-center mb-2 text-warning small">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-1">(85)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="fw-bold text-dark fs-5">$299.00</span>
+                            <button class="btn btn-outline-primary btn-sm">buy new</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 product-card shadow-sm">
+                    <div class="p-2 bg-white text-center rounded-top">
+                        <img  width="210px" height="200px" src="https://scontent.fpnh11-2.fna.fbcdn.net/v/t39.99422-6/720207626_2034893863801624_6086547560653812683_n.png?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFyQSKI8v2PkogBR_tmLqFV2eCvO6hoF0bZ4K87qGgXRg5XoMSfHjuUQyRO1wqecUTIeATJiwlb8T1Rhmy0EEdT&_nc_ohc=ahSmgIfzUzoQ7kNvwGC5_Gy&_nc_oc=AdrUBRPV7tr90Cv3_gDmV1oU8zhcFcsoQnAGOuBBLFd1Efo555y4mVFokNN4MvSqZlQ&_nc_zt=14&_nc_ht=scontent.fpnh11-2.fna&_nc_gid=XkAXS70EXuUTlSZ5pd0kiQ&_nc_ss=7b2a8&oh=00_AQD3f6NNrSEVg7UVTIq6q76vfNn0MalfxhFdyaHvJKWo9w&oe=6A4AD224" class="card-img h-100 object-fit-cover" alt="">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="text-muted small mb-1">Fashion</span>
+                        <h5 class="card-title h6 fw-bold mb-2">Urban Canvas Backpack</h5>
+                        <div class="d-flex align-items-center mb-2 text-warning small">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                            <span class="text-muted ms-1">(9)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="fw-bold text-dark fs-5">$79.00</span>
+                            <button class="btn btn-outline-primary btn-sm">buy new</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <h6 class="fw-bold text-white mb-3">ShopEase</h6>
+                    <p class="text-light">Your go-to destination for top-tier quality and exceptional service. We make online shopping a breeze.</p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6 class="text-white fw-semibold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact Support</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6 class="text-white fw-semibold mb-3">Newsletter</h6>
+                    <p class="text-light small">Subscribe to get special offers and updates.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-sm" placeholder="Your email">
+                        <button class="btn btn-primary btn-sm">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-light small">
+                <p>&copy; 2026 ShopEase Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="../bootstrep/js/bootstrap.js"></script>
+</body>
+</html>
